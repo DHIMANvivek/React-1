@@ -1,11 +1,15 @@
 {
+  "homepage": "https://1blockchain.me/react-1",
   "name": "react-1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html"
+   
   },
   "author": "",
   "license": "ISC",
@@ -18,9 +22,11 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "save-dev": "^0.0.1-security"
   },
   "browserslist": [
     "last 2 Chrome versions"
